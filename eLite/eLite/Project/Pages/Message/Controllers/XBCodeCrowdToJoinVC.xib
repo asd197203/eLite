@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBCodeCrowdToJoinVC">
+            <connections>
+                <outlet property="tableView" destination="9yQ-dW-fbn" id="v5y-yx-DmB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="OF2-0p-fhS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yQ-dW-fbn">
+                    <rect key="frame" x="0.0" y="5" width="320" height="475"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="121" id="q0S-2O-IBi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="q0S-2O-IBi"/>
+                        </mask>
+                    </variation>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9yQ-dW-fbn" secondAttribute="bottom" id="Wiq-hV-DGW"/>
+                <constraint firstItem="9yQ-dW-fbn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="byz-gC-2f0"/>
+                <constraint firstItem="9yQ-dW-fbn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="owW-ww-HkI"/>
+                <constraint firstAttribute="trailing" secondItem="9yQ-dW-fbn" secondAttribute="trailing" id="rau-Ge-YVm"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="280" y="52"/>
+        </view>
+    </objects>
+</document>

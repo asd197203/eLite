@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBVoiceHistoryContentController">
+            <connections>
+                <outlet property="_playImageView" destination="O4e-Iv-Rys" id="USH-XA-8M4"/>
+                <outlet property="_subjLabel" destination="fcs-La-PEW" id="ttN-7d-DM7"/>
+                <outlet property="view" destination="ZcW-KX-XQV" id="UZC-aJ-FNe"/>
+                <outlet property="voiceBubble" destination="pZz-rj-nLJ" id="VNn-VN-cKK"/>
+                <outlet property="voiceTimeLabel" destination="liH-2A-Tzr" id="eln-z6-583"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZcW-KX-XQV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请朗读下面这段话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDA-4t-Jl4">
+                    <rect key="frame" x="15" y="84" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="YfI-aM-AZZ"/>
+                        <constraint firstAttribute="width" constant="150" id="rnk-ur-SUF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.48495592949999999" green="0.48495592949999999" blue="0.48495592949999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZz-rj-nLJ">
+                    <rect key="frame" x="8" y="156" width="143" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.95613138090000005" blue="0.14872168390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="B5f-6Y-hPT"/>
+                        <constraint firstAttribute="width" constant="143" id="pRo-NH-NcU"/>
+                    </constraints>
+                    <connections>
+                        <action selector="playVoice:" destination="-1" eventType="touchUpInside" id="QAq-CW-TRv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're beautiful." textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcs-La-PEW">
+                    <rect key="frame" x="15" y="120" width="290" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遮挡视频.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-Xz-cAP">
+                    <rect key="frame" x="0.0" y="140" width="161" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="Gug-BL-uIi"/>
+                        <constraint firstAttribute="height" constant="73" id="n4Q-md-Opn"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying.png" translatesAutoresizingMaskIntoConstraints="NO" id="O4e-Iv-Rys">
+                    <rect key="frame" x="27" y="156" width="124" height="42"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="KSz-fd-Bpn"/>
+                        <constraint firstAttribute="height" constant="42" id="hs5-o6-hb8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liH-2A-Tzr">
+                    <rect key="frame" x="162" y="166" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="R1X-KW-vPC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pZz-rj-nLJ" firstAttribute="leading" secondItem="ZcW-KX-XQV" secondAttribute="leading" constant="8" id="7LS-l6-kTT"/>
+                <constraint firstItem="fcs-La-PEW" firstAttribute="top" secondItem="RDA-4t-Jl4" secondAttribute="bottom" constant="15" id="7T0-OI-Arp"/>
+                <constraint firstItem="Ym7-Xz-cAP" firstAttribute="leading" secondItem="ZcW-KX-XQV" secondAttribute="leading" id="7mF-ua-ww8"/>
+                <constraint firstItem="RDA-4t-Jl4" firstAttribute="top" secondItem="ZcW-KX-XQV" secondAttribute="top" constant="84" id="ArF-HO-EYy"/>
+                <constraint firstAttribute="trailing" secondItem="fcs-La-PEW" secondAttribute="trailing" constant="15" id="HMC-69-p7A"/>
+                <constraint firstItem="RDA-4t-Jl4" firstAttribute="leading" secondItem="ZcW-KX-XQV" secondAttribute="leading" constant="15" id="LWn-93-Dc6"/>
+                <constraint firstItem="pZz-rj-nLJ" firstAttribute="top" secondItem="fcs-La-PEW" secondAttribute="bottom" constant="15" id="OFr-MO-p5r"/>
+                <constraint firstItem="fcs-La-PEW" firstAttribute="leading" secondItem="ZcW-KX-XQV" secondAttribute="leading" constant="15" id="aG7-Ul-gBx"/>
+                <constraint firstItem="O4e-Iv-Rys" firstAttribute="leading" secondItem="ZcW-KX-XQV" secondAttribute="leading" constant="27" id="bwu-dG-ygm"/>
+                <constraint firstItem="Ym7-Xz-cAP" firstAttribute="top" secondItem="fcs-La-PEW" secondAttribute="bottom" constant="-1" id="cN3-BU-LNV"/>
+                <constraint firstItem="O4e-Iv-Rys" firstAttribute="top" secondItem="fcs-La-PEW" secondAttribute="bottom" constant="15" id="l6e-Kz-RJh"/>
+                <constraint firstItem="liH-2A-Tzr" firstAttribute="leading" secondItem="pZz-rj-nLJ" secondAttribute="trailing" constant="11" id="lhr-AL-RUG"/>
+                <constraint firstItem="liH-2A-Tzr" firstAttribute="centerY" secondItem="pZz-rj-nLJ" secondAttribute="centerY" id="oBz-co-CoF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="906" y="334"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ReceiverVoiceNodePlaying.png" width="20" height="20"/>
+        <image name="遮挡视频.png" width="200" height="200"/>
+    </resources>
+</document>

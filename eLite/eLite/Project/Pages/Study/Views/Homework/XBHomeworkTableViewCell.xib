@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="XBHomeworkTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixt-vn-vql">
+                        <rect key="frame" x="10" y="5" width="300" height="49.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OVZ-GM-7Df">
+                                <rect key="frame" x="10" y="10" width="30" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FlF-Xf-jBf"/>
+                                    <constraint firstAttribute="width" constant="30" id="Ubk-t8-ZyW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-Fq-9Cd">
+                                <rect key="frame" x="50" y="10" width="240" height="29.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OVZ-GM-7Df" firstAttribute="leading" secondItem="Ixt-vn-vql" secondAttribute="leading" constant="10" id="1i3-RF-45n"/>
+                            <constraint firstAttribute="bottom" secondItem="OVZ-GM-7Df" secondAttribute="bottom" constant="10" id="JW6-CE-Fd5"/>
+                            <constraint firstItem="OVZ-GM-7Df" firstAttribute="top" secondItem="Ixt-vn-vql" secondAttribute="top" constant="10" id="O7U-vF-okB"/>
+                            <constraint firstItem="MyO-Fq-9Cd" firstAttribute="top" secondItem="Ixt-vn-vql" secondAttribute="top" constant="10" id="QLv-iE-PBy"/>
+                            <constraint firstItem="MyO-Fq-9Cd" firstAttribute="leading" secondItem="OVZ-GM-7Df" secondAttribute="trailing" constant="10" id="WZC-W7-7C6"/>
+                            <constraint firstAttribute="bottom" secondItem="MyO-Fq-9Cd" secondAttribute="bottom" constant="10" id="dle-AY-C4E"/>
+                            <constraint firstAttribute="trailing" secondItem="MyO-Fq-9Cd" secondAttribute="trailing" constant="10" id="s6p-Us-yhA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ixt-vn-vql" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1Nj-TG-zE5"/>
+                    <constraint firstAttribute="bottom" secondItem="Ixt-vn-vql" secondAttribute="bottom" constant="5" id="22P-cN-zFe"/>
+                    <constraint firstAttribute="trailing" secondItem="Ixt-vn-vql" secondAttribute="trailing" constant="10" id="eTF-fb-LyD"/>
+                    <constraint firstItem="Ixt-vn-vql" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="o6M-65-uAG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="_leftImage" destination="OVZ-GM-7Df" id="urk-MQ-6tq"/>
+                <outlet property="_title" destination="MyO-Fq-9Cd" id="nMz-Kz-9Ms"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

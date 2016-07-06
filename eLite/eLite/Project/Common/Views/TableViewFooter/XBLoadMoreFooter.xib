@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBLoadMoreFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-PW-Uov">
+                    <rect key="frame" x="141" y="14" width="82" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="r9T-mK-UOl">
+                    <rect key="frame" x="113" y="15" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="r4p-PW-Uov" secondAttribute="bottom" constant="15" id="6By-eD-AUu"/>
+                <constraint firstItem="r9T-mK-UOl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7kk-4d-ry0"/>
+                <constraint firstItem="r4p-PW-Uov" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7wn-su-psk"/>
+                <constraint firstItem="r9T-mK-UOl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-37" id="FcN-yf-iY6"/>
+                <constraint firstItem="r9T-mK-UOl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Hy0-KN-enS"/>
+                <constraint firstAttribute="bottom" secondItem="r9T-mK-UOl" secondAttribute="bottom" constant="15" id="d7b-Rz-RTp"/>
+                <constraint firstItem="r4p-PW-Uov" firstAttribute="leading" secondItem="r9T-mK-UOl" secondAttribute="trailing" constant="8" id="dsz-Wk-CIu"/>
+                <constraint firstItem="r4p-PW-Uov" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="nLy-3Y-8so"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="234" y="220"/>
+        </view>
+    </objects>
+</document>

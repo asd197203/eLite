@@ -1,0 +1,49 @@
+//
+//  CXZ-PrefixHeader.pch
+//  CXZ
+//
+//  Created by Crz on 16/1/12.
+//  Copyright © 2016年 Ranger. All rights reserved.
+//
+
+#ifndef CXZ_PrefixHeader_pch
+#define CXZ_PrefixHeader_pch
+
+#ifdef __cplusplus
+    #define CXZ_EXTERN		extern "C" __attribute__((visibility ("default")))
+#else
+    #define CXZ_EXTERN	    extern __attribute__((visibility ("default")))
+#endif
+
+// 头文件
+#ifdef __OBJC__
+    // System
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    // Macros
+    #import "CXZMacros.h"
+    #import "CXZGlobalFunctions.h"
+
+    // Categories
+    #import "UIView+EasyShow.h"
+    #import "UIView+Handle.h"
+
+    // Helper
+    #import "CXZUserDefaults.h"
+    #import "CXZNotificationHelper.h"
+    #import "CXZKVOHelper.h"
+//    #import "CXZDataBaseManager.h"
+//    #import "CXZLocationHelper.h"
+
+    // utils
+    #import "CXZSimpleTool.h"
+
+    // Project
+    #import "XBCommonDefines.h"
+
+#endif
+
+
+
+#endif /* CXZ_PrefixHeader_pch */

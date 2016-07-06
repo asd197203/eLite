@@ -1,0 +1,26 @@
+platform :ios, '7.0'
+pod "SVProgressHUD"
+pod "SDWebImage"
+pod "pop"
+pod "IQKeyboardManager"
+pod "AFNetworking","2.6.3"
+pod "LazyTableView"
+pod "LazyPageScrollView"
+pod "AVOSCloud"
+pod "AVOSCloudIM"
+pod 'AVOSCloudCrashReporting'
+pod 'MBProgressHUD', '0.9.1'
+pod 'LZAlertViewHelper' , '0.0.2'
+pod 'JSBadgeView', '1.4.1'
+pod 'FXForms', '1.2.13'
+pod 'iVersion', '1.11.4'
+pod 'iRate', '1.11.4'
+pod 'OpenShare', '0.0.1'
+pod 'PopMenu', '2.4'
+pod 'CYLTabBarController'
+pod 'DateTools' , '1.5.0'
+pod 'FMDB', '2.5'
+pod 'LeanCloudFeedback'
+pod 'LeanCloudSocial', '0.0.7'
+pod 'CYLDeallocBlockExecutor'
+pod "RunTrace"

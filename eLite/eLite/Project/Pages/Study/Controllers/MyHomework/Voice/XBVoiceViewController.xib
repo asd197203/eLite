@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBVoiceViewController">
+            <connections>
+                <outlet property="_playImageView" destination="QkX-hM-7pE" id="Ue9-ex-9E5"/>
+                <outlet property="_recordBtn" destination="rQm-k8-tFH" id="2II-rk-8vH"/>
+                <outlet property="_recordLabel" destination="liZ-SX-Ie6" id="KdY-JW-G2E"/>
+                <outlet property="_subjLabel" destination="Z0p-wq-9fQ" id="ZAJ-Hx-WCH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceBtnWidthConstraint" destination="3Kk-wA-hWs" id="Gzb-0M-oI6"/>
+                <outlet property="voiceBubble" destination="um5-1t-hzp" id="nFU-yA-WA5"/>
+                <outlet property="voiceTimeLabel" destination="nx2-TY-O5h" id="0Rx-xI-U3g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQm-k8-tFH">
+                    <rect key="frame" x="135" y="476" width="50" height="50"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="gCI-JX-uSI"/>
+                        <constraint firstAttribute="height" constant="50" id="nAO-Lo-PHJ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="homework_voice_btn.png"/>
+                    <connections>
+                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="7a1-IK-NdO"/>
+                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="OYM-RT-W0R"/>
+                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="tYg-Vd-ErE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请朗读下面这段话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP9-i3-dth">
+                    <rect key="frame" x="15" y="84" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="eTq-qA-2kl"/>
+                        <constraint firstAttribute="height" constant="21" id="erG-uG-0Y6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.48495592949999999" green="0.48495592949999999" blue="0.48495592949999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um5-1t-hzp">
+                    <rect key="frame" x="8" y="156" width="143" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.95613138090000005" blue="0.14872168390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="143" id="3Kk-wA-hWs"/>
+                        <constraint firstAttribute="height" constant="42" id="6Pv-d6-EG3"/>
+                    </constraints>
+                    <connections>
+                        <action selector="playVoice:" destination="-1" eventType="touchUpInside" id="022-kJ-OPB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're beautiful." textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-wq-9fQ">
+                    <rect key="frame" x="15" y="120" width="290" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遮挡视频.png" translatesAutoresizingMaskIntoConstraints="NO" id="gUs-sc-vt6">
+                    <rect key="frame" x="0.0" y="140" width="161" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="7Xx-OU-hxn"/>
+                        <constraint firstAttribute="height" constant="73" id="bHy-DV-oFM"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying.png" translatesAutoresizingMaskIntoConstraints="NO" id="QkX-hM-7pE">
+                    <rect key="frame" x="27" y="156" width="124" height="42"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="i2S-Ye-RWh"/>
+                        <constraint firstAttribute="height" constant="42" id="poB-GM-Jju"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx2-TY-O5h">
+                    <rect key="frame" x="162" y="166" width="35.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6ga-53-4Ou"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始录音" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liZ-SX-Ie6">
+                    <rect key="frame" x="128" y="539" width="64" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nx2-TY-O5h" firstAttribute="centerY" secondItem="um5-1t-hzp" secondAttribute="centerY" id="6G4-vR-k2h"/>
+                <constraint firstItem="Z0p-wq-9fQ" firstAttribute="top" secondItem="OP9-i3-dth" secondAttribute="bottom" constant="15" id="87B-qQ-Z8Q"/>
+                <constraint firstItem="um5-1t-hzp" firstAttribute="top" secondItem="Z0p-wq-9fQ" secondAttribute="bottom" constant="15" id="B5c-pb-sfn"/>
+                <constraint firstItem="gUs-sc-vt6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ccr-Ni-h2c"/>
+                <constraint firstAttribute="trailing" secondItem="Z0p-wq-9fQ" secondAttribute="trailing" constant="15" id="DSr-vD-fSG"/>
+                <constraint firstItem="nx2-TY-O5h" firstAttribute="leading" secondItem="um5-1t-hzp" secondAttribute="trailing" constant="11" id="IrH-4X-9Lt"/>
+                <constraint firstItem="QkX-hM-7pE" firstAttribute="top" secondItem="Z0p-wq-9fQ" secondAttribute="bottom" constant="15" id="OA2-IM-Py5"/>
+                <constraint firstItem="QkX-hM-7pE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="Pdh-YG-bKr"/>
+                <constraint firstItem="Z0p-wq-9fQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Srt-Vg-bNx"/>
+                <constraint firstItem="OP9-i3-dth" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="V4N-oV-Xks"/>
+                <constraint firstItem="gUs-sc-vt6" firstAttribute="top" secondItem="Z0p-wq-9fQ" secondAttribute="bottom" constant="-1" id="Xmu-RG-VkH"/>
+                <constraint firstItem="rQm-k8-tFH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y9M-94-nBY"/>
+                <constraint firstItem="liZ-SX-Ie6" firstAttribute="centerX" secondItem="rQm-k8-tFH" secondAttribute="centerX" id="amk-k1-Eka"/>
+                <constraint firstItem="OP9-i3-dth" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="eqM-U1-JJK"/>
+                <constraint firstItem="um5-1t-hzp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="mQp-FC-9hC"/>
+                <constraint firstItem="liZ-SX-Ie6" firstAttribute="top" secondItem="rQm-k8-tFH" secondAttribute="bottom" constant="13" id="npW-za-aUd"/>
+                <constraint firstAttribute="bottom" secondItem="rQm-k8-tFH" secondAttribute="bottom" constant="42" id="vUE-rR-2nT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ReceiverVoiceNodePlaying.png" width="20" height="20"/>
+        <image name="homework_voice_btn.png" width="28" height="28"/>
+        <image name="遮挡视频.png" width="200" height="200"/>
+    </resources>
+</document>

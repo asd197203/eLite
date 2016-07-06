@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBCrowdCodeVC">
+            <connections>
+                <outlet property="CodeImageView" destination="Z6m-Fh-lKq" id="JJP-7r-vbo"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0uS-Hk-5pg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6m-Fh-lKq">
+                    <rect key="frame" x="37" y="100" width="246" height="233"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="233" id="Wow-d0-5Ws"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z6m-Fh-lKq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="36E-Da-vr6"/>
+                <constraint firstItem="Z6m-Fh-lKq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="7ae-0J-6DL"/>
+                <constraint firstAttribute="trailing" secondItem="Z6m-Fh-lKq" secondAttribute="trailing" constant="37" id="xB1-Tt-R78"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="354" y="78"/>
+        </view>
+    </objects>
+</document>

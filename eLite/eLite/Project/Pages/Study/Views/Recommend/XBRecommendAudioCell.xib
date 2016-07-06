@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioCell" rowHeight="104" id="KGk-i7-Jjw" customClass="XBRecommendAudioCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-Lg-WOV">
+                        <rect key="frame" x="10" y="5" width="300" height="93.5"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJr-1r-Tnp">
+                                <rect key="frame" x="192" y="22" width="35.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="akn-5H-rkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKm-t3-Bho">
+                                <rect key="frame" x="6" y="10.5" width="184" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.95613138090000005" blue="0.14872168390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="F0K-d6-HH5"/>
+                                    <constraint firstAttribute="height" constant="42" id="f6U-so-eH3"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="playAudio:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R5C-pR-Ctu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遮挡视频.png" translatesAutoresizingMaskIntoConstraints="NO" id="yZd-UO-ppp">
+                                <rect key="frame" x="-9" y="-12" width="217" height="83.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83.5" id="DK2-48-dwi"/>
+                                    <constraint firstAttribute="width" constant="217" id="nBo-gg-Wgr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pn5-zo-XTJ">
+                                <rect key="frame" x="22" y="10.5" width="162" height="42"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="2cY-qc-mUl"/>
+                                    <constraint firstAttribute="height" constant="42" id="Pt2-CJ-2Xy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE8-Za-qjI">
+                                <rect key="frame" x="10" y="63" width="290" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MTy-f9-udZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VKm-t3-Bho" firstAttribute="top" secondItem="ofn-Lg-WOV" secondAttribute="top" constant="10" id="5KG-FF-jD3"/>
+                            <constraint firstAttribute="trailing" secondItem="YE8-Za-qjI" secondAttribute="trailing" id="KE2-qF-yNu"/>
+                            <constraint firstItem="NJr-1r-Tnp" firstAttribute="leading" secondItem="Pn5-zo-XTJ" secondAttribute="trailing" constant="8" id="Svc-yL-ak6"/>
+                            <constraint firstItem="NJr-1r-Tnp" firstAttribute="leading" secondItem="VKm-t3-Bho" secondAttribute="trailing" constant="2" id="SxM-fs-YHn"/>
+                            <constraint firstItem="YE8-Za-qjI" firstAttribute="leading" secondItem="ofn-Lg-WOV" secondAttribute="leading" constant="10" id="X4A-IA-0Ch"/>
+                            <constraint firstItem="Pn5-zo-XTJ" firstAttribute="leading" secondItem="ofn-Lg-WOV" secondAttribute="leading" constant="22" id="aOd-lz-eaB"/>
+                            <constraint firstItem="Pn5-zo-XTJ" firstAttribute="top" secondItem="ofn-Lg-WOV" secondAttribute="top" constant="10" id="dxg-rf-Ebw"/>
+                            <constraint firstItem="NJr-1r-Tnp" firstAttribute="centerY" secondItem="VKm-t3-Bho" secondAttribute="centerY" constant="-1" id="fAG-3a-1IC"/>
+                            <constraint firstItem="yZd-UO-ppp" firstAttribute="leading" secondItem="ofn-Lg-WOV" secondAttribute="leading" constant="-9" id="h2a-Fg-deb"/>
+                            <constraint firstItem="VKm-t3-Bho" firstAttribute="leading" secondItem="ofn-Lg-WOV" secondAttribute="leading" constant="6" id="o84-0S-JdP"/>
+                            <constraint firstAttribute="bottom" secondItem="YE8-Za-qjI" secondAttribute="bottom" constant="10" id="sDX-Wo-kLc"/>
+                            <constraint firstItem="yZd-UO-ppp" firstAttribute="top" secondItem="ofn-Lg-WOV" secondAttribute="top" constant="-12" id="tc8-o1-BXT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="ofn-Lg-WOV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="N3h-Zb-QkP"/>
+                    <constraint firstAttribute="bottom" secondItem="ofn-Lg-WOV" secondAttribute="bottom" constant="5" id="b7J-Mv-rjr"/>
+                    <constraint firstItem="ofn-Lg-WOV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ja1-s6-maW"/>
+                    <constraint firstAttribute="trailing" secondItem="ofn-Lg-WOV" secondAttribute="trailing" constant="10" id="ybl-XH-n6U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="audioTime" destination="NJr-1r-Tnp" id="05x-cy-A1R"/>
+                <outlet property="dateLabel" destination="YE8-Za-qjI" id="ntl-9l-YXr"/>
+                <outlet property="playingImageView" destination="Pn5-zo-XTJ" id="Vxp-94-g1f"/>
+            </connections>
+            <point key="canvasLocation" x="222" y="334"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ReceiverVoiceNodePlaying.png" width="20" height="20"/>
+        <image name="遮挡视频.png" width="200" height="200"/>
+    </resources>
+</document>

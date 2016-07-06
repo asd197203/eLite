@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBHelperAndFeedBackVC">
+            <connections>
+                <outlet property="searchDisplayController" destination="sTL-w3-xfD" id="71J-PI-v3s"/>
+                <outlet property="tableView" destination="b8c-gU-LSQ" id="kkC-9l-wM7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-gU-LSQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zNv-J8-WWT"/>
+                        <outlet property="delegate" destination="-1" id="BNh-K2-VsT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b8c-gU-LSQ" secondAttribute="bottom" id="CCb-kR-xI5"/>
+                <constraint firstAttribute="trailing" secondItem="b8c-gU-LSQ" secondAttribute="trailing" id="Gdd-qm-jcZ"/>
+                <constraint firstItem="b8c-gU-LSQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dKB-Bs-cae"/>
+                <constraint firstItem="b8c-gU-LSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iRV-MT-ZKE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="284" y="172"/>
+        </view>
+        <searchDisplayController id="sTL-w3-xfD">
+            <connections>
+                <outlet property="delegate" destination="-1" id="On1-Er-rFg"/>
+                <outlet property="searchContentsController" destination="-1" id="VJo-zY-Ur7"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="3me-LN-Lj5"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="q0K-7w-iQP"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>
